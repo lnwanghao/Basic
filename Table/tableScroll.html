@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        th {
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        div {
+            width: 300px;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .head {
+            overflow-y: scroll;
+        }
+
+        table th {
+            text-align: left;
+        }
+
+        .body {
+            height: 80px;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+
+        .body colgroup {
+            /* width: 100px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class='head'>
+        <table>
+            <colgroup width='40px'></colgroup>
+            <colgroup width='40px'></colgroup>
+            <colgroup width='100px'></colgroup>
+            <thead>
+                <tr>
+                    <th>表头1</th>
+                    <th>表头2</th>
+                    <th>表头3</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class='body'>
+        <table>
+            <colgroup width='40px'></colgroup>
+            <colgroup width='40px'></colgroup>
+            <colgroup width='100px'></colgroup>
+            <tbody>
+                <tr>
+                    <td>1111112312312312312312</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1111112312312312312312</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1111112312312312312312</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
